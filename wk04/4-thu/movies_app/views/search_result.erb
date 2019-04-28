@@ -1,0 +1,29 @@
+<p>
+  <ul class="search-result">
+  <% @movies.each do |movie| %>
+    <li class="movie-card">
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="<%= movie[:Poster] %>"/>
+          </div>
+          <div class="flip-card-back">
+            <ul class="movie-info">
+              <br><li>Title: <%= movie[:Title] %></li></>
+              <br><li>Year: <%= movie[:Year] %></li></>
+              <br><li>Type: <%= movie[:Type] %></li></>
+            </ul>
+          </div>  
+        </div>
+      </div>
+
+      <a href="/movie_viewer?title=<%= movie[:Title] %>">
+        <h5><%= movie[:Title] %></h5>
+      </a>
+      
+    </li>
+  <% end %>
+  </ul>
+</p>
+

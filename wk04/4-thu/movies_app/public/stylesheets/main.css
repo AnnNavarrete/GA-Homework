@@ -1,0 +1,136 @@
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #ffad4c;
+  color: #d7be82;
+}
+
+.top-nav {
+  margin: 2rem;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  color: #353535;
+  text-shadow: 1px 1px 0px grey, 1px 1px 0px rgba(54, 54, 54, 0.5);
+}
+
+p {
+  margin: 1rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  color: #353535;
+  text-shadow: 1px 1px 0px grey, 1px 1px 0px rgba(54, 54, 54, 0.5);
+}
+
+.header {
+  margin-top: 10rem;
+}
+
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #353535;
+  letter-spacing: 10px;
+  text-shadow: 0.2rem 0.2rem 0rem #fff, 0.1rem 0.1rem 0rem rgba(54, 54, 54, 0.5);
+}
+
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 50px;
+}
+
+.search-engine {
+  padding: 0.5rem 5rem 0.5rem 5rem;
+  border-radius: 10%;
+  font-size: 2rem;
+}
+
+.button {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  color: #353535;
+  border-radius: 10%;
+  margin-left: 1rem;
+}
+
+h5 {
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  color: #353535;
+  text-shadow: 1px 1px 0px grey, 1px 1px 0px rgba(54, 54, 54, 0.5);
+}
+
+li {
+  display: inline;
+  font-style: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.search-result {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  padding: 1rem;
+}
+
+.movie-card {
+  background-color: #bd5c38;
+}
+
+.movie-info {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.search-result img {
+  max-width: 150px;
+  max-height: 300px;
+  padding: 2rem;
+}
+
+.search-result .flip-card {
+  height: 280px;
+}
+
+.search-result .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bd5c38;
+}
+
+.flip-card-back {
+  background-color: #bd5c38;
+  transform: rotateY(180deg);
+}

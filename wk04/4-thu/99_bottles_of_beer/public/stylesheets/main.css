@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Gaegu", cursive;
+  display: flex;
+  background: #85c7ff;
+  background: -webkit-linear-gradient(to bottom, #ffdde1, #85c7ff);
+  background: linear-gradient(to bottom, #ffdde1, #85c7ff);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
