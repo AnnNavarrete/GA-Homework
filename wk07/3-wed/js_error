@@ -1,0 +1,130 @@
+1. Uncaught SyntaxError: Unexpected token {
+  When a closing bracker from a function is missing
+
+<script>
+  var test = function(hello {
+  return true
+  }
+  test("hello")
+</script>
+
+2. Uncaught ReferenceError: greeting is not defined
+  'greeting' cannot be found within the function as it has not been declared
+
+<script>
+  var checkVariable = function() {
+    if(greetings === undefine) {
+      console.log("greetings")
+    } else {
+      console.log("declare greetings variable")
+    }
+  }
+  checkVariable();
+</script>
+
+3. GET file:///scripts.js net::ERR_FILE_NOT_FOUND
+  not linking scripts.js to you html file or it's not in the same folder
+
+<script>
+  <script scr="scrip.js"></script>
+</script>
+
+4. GET http://maxcdn.com/bootstrap.css 400 (Not Found)
+  400 (Not Found) can't locate the url address 
+  either does not exit or have not typed in correctly
+  alternatively, the site could also be down
+
+<script>
+  https://hello.com/bootstrap.css
+</script>
+
+5. Uncaught TypeError: "hello".push is not a function
+  can only use push to add something inside an array
+  to also use function, it requires push()
+  "hello" is a string and the above type error is trying to use 
+  push function to a string
+
+<script>
+  "hello".push()
+</script>
+
+6. Uncaught TypeError: this.greet is not a function
+  'this' refers to the context of wherever this code is running (function or class)
+  however the 'greet' does not exist on 'this'
+  in order to call greet as a function, a function called greet needs to be created
+
+<script>
+  this.greet()
+</script>
+
+7. Uncaught TypeError: Cannot read property 'name' of undefined
+  'name' is a property which has not been defined
+
+<script>
+  a.name
+</script>
+
+8. Uncaught SyntaxError: missing ) after argument list
+  Typo in the arguement i.e. missing ), additional " within the arguement
+
+<script>
+  var test = function(hello) {
+  return true
+  }
+  test("hello"
+</script>
+
+9. Uncaught ReferenceError: Invalid left-hand side in assignment
+  Incorrect use of assignment or comparison operator such as;
+  assignment operator: + - = / % | to name a few
+  comparison operator: == not a strict comparison i.e. js may convert this 
+                      === a strict comparison, used to ensure it's exactly the same
+
+<script>
+  "hello" = 1
+</script>
+
+10. Uncaught SyntaxError: Unexpected number
+  initialising variable incorrectly i.e. code below:
+  var i = 0, the coma throws off the compiler as it looks like
+  the initialisation has not ended
+
+<script>
+  for (var i = 0, 1 < hello.length; i =+ 1)
+</script>
+
+11. Uncaught SyntaxError: Unexpected string
+  Mix matching string quote types i.e. double with single quotes
+  Especially when concatinating
+
+<script>
+  ('concat' . name . 'this')
+</script>
+
+12. Uncaught SyntaxError: Unexpected identifier
+  Referencing variable that hasn't been declared
+
+<script>
+  var errorCheck = function (numErrors) {
+    if (num > 8) {
+    return "You're getting too many errors"
+    } else {
+    return "Still continue to practice!"
+    }
+  }
+  console.log(errorCheck(10)
+</script>
+
+13. Uncaught SyntaxError: Unterminated template literal
+  When a backtick is used but doesn't have an ending 
+
+<script>
+// Optional code goes here
+</script>
+
+14. Uncaught RangeError: Maximum call stack size exceeded
+  Calling multiple functions at once and hitting the stack limit
+
+<script>
+// Optional code goes here
+</script>

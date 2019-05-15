@@ -1,0 +1,29 @@
+<h2>All Planets</h2>
+<table>
+  <thead>
+    <th>Planet name</th>
+    <th>Image URL</th>
+    <th>Diameter</th>
+    <th>Distance</th>
+    <th>Mass</th>
+    <th>Moons</th>
+  </thead>
+  <tbody>
+    <% @planets.each do |planet| %>
+      <tr>
+        <td>
+          <a href="/planets/<%=planet.id%>"><%= planet.name %></a>
+        </td>
+        <td><%= planet.image %></td>
+        <td><%= planet.diameter.round(0) %></td>
+        <td><%= planet.distance.round(0) %></td>
+        <td><%= planet.mass.round(0) %></td>
+        <td><%= planet.moons %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+

@@ -1,0 +1,8 @@
+<form action="/planets/<%= @planet.id %>" method="post">
+<input type="hidden"  name="_method" value="delete">
+<button>Delete</button>
+</form>
+
+<button>
+<a href="/planets/<%= @planet.id %>/update">Update</a>
+</button>

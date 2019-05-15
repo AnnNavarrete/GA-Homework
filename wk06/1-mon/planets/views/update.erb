@@ -1,0 +1,16 @@
+<form action="/planets/<%= @planet.id %>" method="post">
+<input type="hidden" name="_method" value="put">
+<label for="">Planet Name</label>
+<input type="text" name="name" value="<%= @planet.name %>">
+<label for="">Image URL</label>
+<input type="text" name="image" value="<%= @planet.image %>">
+<label for="">Diameter</label>
+<input type="numeric" name="diameter" value="<%= @planet.diameter %>">
+<label for="">Distance</label>
+<input type="numeric" name="distance" value="<%= @planet.distance %>">
+<label for="">Mass</label>
+<input type="numeric" name="mass" value="<%= @planet.mass %>">
+<label for="">Moons</label>
+<input type="numeric" name="moons" value="<%= @planet.moons %>">
+<button>update</button>
+</form>
