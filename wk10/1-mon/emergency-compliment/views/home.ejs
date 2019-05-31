@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <style>
+    body {
+      background-color: <%= color %>;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome to Emergency Compliments!</h1>
+  <% if(locals.name) { %> 
+    <h2>Hello <%= name %></h2>
+  <% } %>
+  <%= compliment %>
+</body>
+</html>

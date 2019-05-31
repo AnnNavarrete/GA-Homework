@@ -1,0 +1,36 @@
+body {
+  margin: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+input {
+  border: 1px solid;
+  padding: 0.33em;
+}
+
+.brush-box {
+  width: 80px;
+  height: 20px;
+  border: 1px solid;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border: 0.5px solid;
+}
+
+button {
+  background-color: white;
+  border: 1px solid grey;
+  padding: 0.25em;
+}
+
+.container {
+  background-color: aqua;
+}

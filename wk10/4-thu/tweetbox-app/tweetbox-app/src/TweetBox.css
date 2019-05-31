@@ -1,0 +1,14 @@
+.warning {
+  color: red;
+}
+
+.meter {
+  height: 20px;
+  width: 100%;
+  border: 1px solid grey;
+}
+
+.meter-bar {
+  background-color: aqua;
+  height: 100%;
+}
